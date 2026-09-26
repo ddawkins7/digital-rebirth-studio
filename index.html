@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Rebirth Studio</title>
+<meta name="description" content="Digital Rebirth Studio makes long-form music and ambience for sleep, focus and relaxation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f4ef;
+    --surface: #ffffff;
+    --ink: #1b1d22;
+    --muted: #5d6270;
+    --line: #e3dfd5;
+    --accent: #3d6f8f;
+    --accent-soft: #e4eef4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --surface: #171b21;
+      --ink: #eceae4;
+      --muted: #a3a8b3;
+      --line: #262c35;
+      --accent: #8dbbd8;
+      --accent-soft: #1b2833;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header.site {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0;
+  }
+  .brand { font-weight: 600; letter-spacing: 0.02em; color: var(--ink); text-decoration: none; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: 0.95rem; }
+  nav a:hover { color: var(--ink); }
+
+  .hero { padding: 72px 0 56px; border-bottom: 1px solid var(--line); }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--accent); font-weight: 600; margin: 0 0 14px; }
+  h1 {
+    font-family: Fraunces, Georgia, serif; font-weight: 600;
+    font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.08; margin: 0 0 18px; letter-spacing: -0.01em;
+  }
+  .lede { font-size: 1.15rem; color: var(--muted); max-width: 38em; margin: 0; }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  h2 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.6rem; margin: 0 0 10px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.96rem; }
+
+  .app { background: var(--accent-soft); border-radius: 14px; padding: 26px; }
+  .app h2 { font-size: 1.35rem; }
+  .app ul { margin: 12px 0 0; padding-left: 20px; }
+  .app li { margin: 4px 0; }
+
+  footer { padding: 36px 0 56px; color: var(--muted); font-size: 0.92rem; }
+  footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+
+  @media (max-width: 520px) {
+    nav a { margin-left: 14px; }
+    .hero { padding: 48px 0 40px; }
+    section { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="./">Digital Rebirth Studio</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <p class="eyebrow">Independent music &amp; ambience studio</p>
+      <h1>Long-form sound for sleep, focus and calm.</h1>
+      <p class="lede">Digital Rebirth Studio produces hours-long music and ambience videos: LoFi mixes, rain and
+      nature soundscapes, sleep narration and meditative loops, made to play quietly in the background for as long as you need.</p>
+    </div>
+
+    <section id="work">
+      <h2>What we make</h2>
+      <p class="sub">Every release is built to run long and stay even, with no sudden changes to pull you out of rest or focus.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>LoFi mixes</h3>
+          <p>Warm, unhurried beats for studying, working and winding down.</p>
+        </div>
+        <div class="card">
+          <h3>Rain &amp; nature ambience</h3>
+          <p>Steady rain, distant thunder and ocean waves, recorded-feel textures that loop seamlessly.</p>
+        </div>
+        <div class="card">
+          <h3>Sleep narration</h3>
+          <p>Gentle spoken stories paired with soft music, paced for drifting off.</p>
+        </div>
+        <div class="card">
+          <h3>Wave &amp; meditation music</h3>
+          <p>Slow ambient pieces and looping visuals for meditation and deep relaxation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="app">
+      <div class="app">
+        <h2>Digital Rebirth N8N</h2>
+        <p>Digital Rebirth N8N is the studio's private, self-hosted automation tool. It runs only for the studio and
+        connects only to the studio's own Google account, where it:</p>
+        <ul>
+          <li>uploads finished videos to the studio's own YouTube channels;</li>
+          <li>reads and updates the studio's own Google Sheets (production queues and logs);</li>
+          <li>stores and reads files in the studio's own Google Drive.</li>
+        </ul>
+        <p>It is not offered to the public. See the <a href="privacy.html">privacy policy</a> for how Google data is handled.</p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="row">
+        <span>&copy; 2026 Digital Rebirth Studio</span>
+        <a href="mailto:digitalrebirthstudio203@gmail.com">digitalrebirthstudio203@gmail.com</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
